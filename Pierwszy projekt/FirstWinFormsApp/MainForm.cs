@@ -36,5 +36,20 @@ namespace FirstWinFormsApp
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonName_Click(object sender, EventArgs e)
+        {
+            string message = "Witaj " + textBoxName.Text + " w tym programie";
+            MessageBox.Show(message);
+            textBoxName.Text = "Adam";
+            labelName.Text = "Inny Tekst";
+            Text = "Nowy Tekst Okna";
+            ClientSize = new System.Drawing.Size(400, 400);
+        }
     }
 }

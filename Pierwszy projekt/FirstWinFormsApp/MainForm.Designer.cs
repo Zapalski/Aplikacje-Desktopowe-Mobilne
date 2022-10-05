@@ -31,13 +31,15 @@ namespace FirstWinFormsApp
         {
             this.buttonFirst = new System.Windows.Forms.Button();
             this.Hello = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelName = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.buttonName = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonFirst
             // 
             this.buttonFirst.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonFirst.Location = new System.Drawing.Point(87, 136);
+            this.buttonFirst.Location = new System.Drawing.Point(46, 12);
             this.buttonFirst.Name = "buttonFirst";
             this.buttonFirst.Size = new System.Drawing.Size(152, 87);
             this.buttonFirst.TabIndex = 0;
@@ -47,7 +49,7 @@ namespace FirstWinFormsApp
             // 
             // Hello
             // 
-            this.Hello.Location = new System.Drawing.Point(431, 144);
+            this.Hello.Location = new System.Drawing.Point(546, 16);
             this.Hello.Name = "Hello";
             this.Hello.Size = new System.Drawing.Size(171, 79);
             this.Hello.TabIndex = 1;
@@ -55,24 +57,48 @@ namespace FirstWinFormsApp
             this.Hello.UseVisualStyleBackColor = true;
             this.Hello.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // labelName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(315, 272);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelName.AutoSize = true;
+            this.labelName.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelName.Location = new System.Drawing.Point(69, 284);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(165, 29);
+            this.labelName.TabIndex = 2;
+            this.labelName.Text = "Podaj imie:";
+            this.labelName.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textBoxName
+            // 
+            this.textBoxName.Location = new System.Drawing.Point(69, 316);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(217, 23);
+            this.textBoxName.TabIndex = 3;
+            this.textBoxName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // buttonName
+            // 
+            this.buttonName.Font = new System.Drawing.Font("DejaVu Sans Condensed", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.buttonName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonName.Location = new System.Drawing.Point(69, 345);
+            this.buttonName.Name = "buttonName";
+            this.buttonName.Size = new System.Drawing.Size(217, 82);
+            this.buttonName.TabIndex = 4;
+            this.buttonName.Text = "Przywitaj sie!";
+            this.buttonName.UseVisualStyleBackColor = true;
+            this.buttonName.Click += new System.EventHandler(this.buttonName_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(763, 439);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.buttonName);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.labelName);
             this.Controls.Add(this.Hello);
             this.Controls.Add(this.buttonFirst);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
             this.Text = "Pierwszy program okienkowy";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -85,7 +111,9 @@ namespace FirstWinFormsApp
 
         private System.Windows.Forms.Button buttonFirst;
         private System.Windows.Forms.Button Hello;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Button buttonName;
     }
 }
 
