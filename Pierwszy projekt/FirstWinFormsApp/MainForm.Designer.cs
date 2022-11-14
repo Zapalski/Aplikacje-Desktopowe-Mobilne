@@ -34,6 +34,8 @@ namespace FirstWinFormsApp
             this.labelName = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.buttonName = new System.Windows.Forms.Button();
+            this.textBoxWiek = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonFirst
@@ -61,7 +63,7 @@ namespace FirstWinFormsApp
             // 
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelName.Location = new System.Drawing.Point(69, 284);
+            this.labelName.Location = new System.Drawing.Point(69, 226);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(165, 29);
             this.labelName.TabIndex = 2;
@@ -70,7 +72,7 @@ namespace FirstWinFormsApp
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(69, 316);
+            this.textBoxName.Location = new System.Drawing.Point(69, 258);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(217, 23);
             this.textBoxName.TabIndex = 3;
@@ -88,11 +90,30 @@ namespace FirstWinFormsApp
             this.buttonName.UseVisualStyleBackColor = true;
             this.buttonName.Click += new System.EventHandler(this.buttonName_Click);
             // 
+            // textBoxWiek
+            // 
+            this.textBoxWiek.Location = new System.Drawing.Point(69, 316);
+            this.textBoxWiek.Name = "textBoxWiek";
+            this.textBoxWiek.Size = new System.Drawing.Size(217, 23);
+            this.textBoxWiek.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(69, 284);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 29);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Wiek:";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(763, 439);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxWiek);
             this.Controls.Add(this.buttonName);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelName);
@@ -114,6 +135,8 @@ namespace FirstWinFormsApp
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Button buttonName;
+        private System.Windows.Forms.TextBox textBoxWiek;
+        private System.Windows.Forms.Label label1;
     }
 }
 

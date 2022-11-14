@@ -19,7 +19,18 @@ namespace FirstWinFormsApp
 
         private void buttonFirst_Click(object sender, EventArgs e)
         {
+
+
             MessageBox.Show("Witaj w pierwszym programie WinForms");
+
+            string strAge = textBoxWiek.Text;
+            if (string.IsNullOrWhiteSpace(strAge))
+            {
+                MessageBox.Show("Nie podano wieku");
+                return;
+            }
+
+
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -46,7 +57,7 @@ namespace FirstWinFormsApp
         {
             string message = "Witaj " + textBoxName.Text + " w tym programie";
             MessageBox.Show(message);
-            textBoxName.Text = "Adam";
+            textBoxName.Text = "Jakub";
             labelName.Text = "Inny Tekst";
             Text = "Nowy Tekst Okna";
             ClientSize = new System.Drawing.Size(400, 400);
