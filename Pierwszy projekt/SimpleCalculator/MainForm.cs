@@ -33,19 +33,6 @@ namespace SimpleCalculator
             }
         }
 
-        private void DivButton_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void SubstractButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MulButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
