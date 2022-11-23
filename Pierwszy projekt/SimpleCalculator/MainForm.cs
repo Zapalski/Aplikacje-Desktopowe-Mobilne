@@ -23,6 +23,29 @@ namespace SimpleCalculator
             int secondNumber;
             if (int.TryParse(textBoxFirstNumber.Text, out firstNumber)
                 && int.TryParse(textBoxSecondNumber.Text, out secondNumber))
+            {
+                int result = firstNumber + secondNumber;
+                labelResult.Text = "Wynik operacji dodawanie:" + result;
+            }
+            else
+            {
+                labelResult.Text = "Podano nieprawidłowe dane";
+            }
+        }
+
+        private void DivButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubstractButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MulButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

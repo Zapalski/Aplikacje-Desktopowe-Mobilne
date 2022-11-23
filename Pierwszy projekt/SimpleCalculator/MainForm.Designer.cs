@@ -33,11 +33,12 @@ namespace SimpleCalculator
             this.labelSecondNumber = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxFirstNumber = new System.Windows.Forms.TextBox();
-            this.TextBoxSecondNumber = new System.Windows.Forms.TextBox();
+            this.textBoxSecondNumber = new System.Windows.Forms.TextBox();
             this.AddButton = new System.Windows.Forms.Button();
             this.SubstractButton = new System.Windows.Forms.Button();
             this.MulButton = new System.Windows.Forms.Button();
             this.DivButton = new System.Windows.Forms.Button();
+            this.labelResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelFirstNumber
@@ -48,7 +49,6 @@ namespace SimpleCalculator
             this.labelFirstNumber.Size = new System.Drawing.Size(91, 15);
             this.labelFirstNumber.TabIndex = 0;
             this.labelFirstNumber.Text = "Pierwsza Liczba:";
-            this.labelFirstNumber.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelSecondNumber
             // 
@@ -58,7 +58,6 @@ namespace SimpleCalculator
             this.labelSecondNumber.Size = new System.Drawing.Size(78, 15);
             this.labelSecondNumber.TabIndex = 1;
             this.labelSecondNumber.Text = "Druga Liczba:";
-            this.labelSecondNumber.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -75,12 +74,12 @@ namespace SimpleCalculator
             this.textBoxFirstNumber.Size = new System.Drawing.Size(100, 23);
             this.textBoxFirstNumber.TabIndex = 3;
             // 
-            // TextBoxSecondNumber
+            // textBoxSecondNumber
             // 
-            this.TextBoxSecondNumber.Location = new System.Drawing.Point(257, 63);
-            this.TextBoxSecondNumber.Name = "TextBoxSecondNumber";
-            this.TextBoxSecondNumber.Size = new System.Drawing.Size(100, 23);
-            this.TextBoxSecondNumber.TabIndex = 4;
+            this.textBoxSecondNumber.Location = new System.Drawing.Point(257, 63);
+            this.textBoxSecondNumber.Name = "textBoxSecondNumber";
+            this.textBoxSecondNumber.Size = new System.Drawing.Size(100, 23);
+            this.textBoxSecondNumber.TabIndex = 4;
             // 
             // AddButton
             // 
@@ -100,6 +99,7 @@ namespace SimpleCalculator
             this.SubstractButton.TabIndex = 6;
             this.SubstractButton.Text = "-";
             this.SubstractButton.UseVisualStyleBackColor = true;
+            this.SubstractButton.Click += new System.EventHandler(this.SubstractButton_Click);
             // 
             // MulButton
             // 
@@ -109,6 +109,7 @@ namespace SimpleCalculator
             this.MulButton.TabIndex = 7;
             this.MulButton.Text = "*";
             this.MulButton.UseVisualStyleBackColor = true;
+            this.MulButton.Click += new System.EventHandler(this.MulButton_Click);
             // 
             // DivButton
             // 
@@ -118,18 +119,28 @@ namespace SimpleCalculator
             this.DivButton.TabIndex = 8;
             this.DivButton.Text = "/";
             this.DivButton.UseVisualStyleBackColor = true;
-            this.DivButton.Click += new System.EventHandler(this.button4_Click);
+            this.DivButton.Click += new System.EventHandler(this.DivButton_Click);
+            // 
+            // labelResult
+            // 
+            this.labelResult.AutoSize = true;
+            this.labelResult.Location = new System.Drawing.Point(79, 168);
+            this.labelResult.Name = "labelResult";
+            this.labelResult.Size = new System.Drawing.Size(38, 15);
+            this.labelResult.TabIndex = 9;
+            this.labelResult.Text = "label1";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 475);
+            this.Controls.Add(this.labelResult);
             this.Controls.Add(this.DivButton);
             this.Controls.Add(this.MulButton);
             this.Controls.Add(this.SubstractButton);
             this.Controls.Add(this.AddButton);
-            this.Controls.Add(this.TextBoxSecondNumber);
+            this.Controls.Add(this.textBoxSecondNumber);
             this.Controls.Add(this.textBoxFirstNumber);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.labelSecondNumber);
@@ -148,11 +159,12 @@ namespace SimpleCalculator
         private System.Windows.Forms.Label labelSecondNumber;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxFirstNumber;
-        private System.Windows.Forms.TextBox TextBoxSecondNumber;
+        private System.Windows.Forms.TextBox textBoxSecondNumber;
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Button SubstractButton;
         private System.Windows.Forms.Button MulButton;
         private System.Windows.Forms.Button DivButton;
+        private System.Windows.Forms.Label labelResult;
     }
 }
 
