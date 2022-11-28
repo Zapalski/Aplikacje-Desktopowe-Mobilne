@@ -99,7 +99,6 @@ namespace SimpleCalculator
             this.SubstractButton.TabIndex = 6;
             this.SubstractButton.Text = "-";
             this.SubstractButton.UseVisualStyleBackColor = true;
-
             // 
             // MulButton
             // 
@@ -109,7 +108,6 @@ namespace SimpleCalculator
             this.MulButton.TabIndex = 7;
             this.MulButton.Text = "*";
             this.MulButton.UseVisualStyleBackColor = true;
-
             // 
             // DivButton
             // 
@@ -119,16 +117,15 @@ namespace SimpleCalculator
             this.DivButton.TabIndex = 8;
             this.DivButton.Text = "/";
             this.DivButton.UseVisualStyleBackColor = true;
-
             // 
             // labelResult
             // 
             this.labelResult.AutoSize = true;
             this.labelResult.Location = new System.Drawing.Point(79, 168);
             this.labelResult.Name = "labelResult";
-            this.labelResult.Size = new System.Drawing.Size(38, 15);
+            this.labelResult.Size = new System.Drawing.Size(0, 15);
             this.labelResult.TabIndex = 9;
-            this.labelResult.Text = "label1";
+            this.labelResult.Click += new System.EventHandler(this.labelResult_Click);
             // 
             // MainForm
             // 
